@@ -1,0 +1,334 @@
+*,html,body{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    // height: 2000px;
+}
+header{
+    background-color: #ffffff;
+    height: 100px;
+    //height: 94px;
+    //line-height: 94px;
+    border-top: 6px solid #7e5c88; 
+    position: fixed;    
+    width: 100% !important;
+    z-index: 1;
+}
+.slider ul,.social-media,.quick-link{
+    list-style: none;
+}
+header ul{
+    list-style: none;
+    display: flex;//remove space between li
+}
+header ul li{
+    display: inline-block;
+    line-height: 94px;
+}
+header nav{
+    float: right;
+}
+
+header nav ul li a{
+    padding-right: 20px; 
+    padding-left: 20px;
+    color: #979797;
+    text-decoration: none;
+}
+
+header nav ul li a:focus {
+    text-decoration: none;
+    color: #979797;
+}
+
+header nav ul li.actvie{
+    background-color: #7e5c88; 
+    border-left: 1px solid #b592bf;    
+    border-right: 1px solid #b592bf;
+}
+header nav ul li.actvie a{    
+    color:#ffffff;
+}
+header nav ul li:hover{
+    transition: all 0.5s ease-out;
+    background-color: #7e5c88;    
+    //margin-right: -1px;
+}
+header nav ul li.actvie:hover{
+    //background-color: #7e5c88;
+    //border-left: none;    
+    //margin-right: 0px;
+}
+header nav ul li:hover a{
+    color:#ffffff;
+    text-decoration: none;
+}
+a.header-logo{
+    text-decoration: none;
+}
+.main-text {
+    font-size: 32px;
+    font-family: Georgia;
+    color: #96739f;
+
+}
+
+.sub-text{
+    font-size: 12px;
+    color: #979797;
+}
+.header-logo{
+    width: 180px;
+    display: inline-block;
+    margin-top: 30px;
+}
+/*slider*/
+.carousel-control{
+    opacity: 1;
+}
+#prev,#next{
+    background: none !important;
+}
+#prev .glyphicon-chevron-left, #next .glyphicon-chevron-right{
+    width: auto;
+    height: auto;
+}
+#prev .glyphicon-chevron-left::before {
+    content: "";
+    background-image: url(../img/slider-arrow-left.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 18px;
+}
+#next .glyphicon-chevron-right::before {
+    content: "";
+    background-image: url(../img/slider-arrow-right.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 18px;
+}
+.slider-carousle .slider-image{
+    border-radius: 50%;
+    border: 25px solid #7e5c88;
+}
+
+.slider-carousle .text-content,.slider-carousle .image{
+    //display: inline-block;
+    //float: none;
+    //vertical-align: middle;
+    //padding-left: 0px;
+    //padding-right: 0px;
+}
+.text-content h2 {
+    font-size: 46px;
+    font-family: georgia;
+    width: 300px;
+    top: 10px;
+}
+.text-content p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #979797;
+    margin: 0 0 25px;
+}
+.text-content a {
+    font-size: 13px;
+    font-family: georgia;
+    background-color: #7e5c88;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 12px 15px;
+    text-decoration: none;
+    border: 1px solid #7e5c88;
+}
+.text-content a:hover {	
+    color: #7e5c88;
+    border: 1px solid #7e5c88;
+    background-color: #ffffff;
+
+}
+.slid-parent{
+    display: flex; /* equal height of the children */
+}
+.text-content,.image-content{
+    //display: table-cell;
+    //vertical-align: middle;
+    flex: 1;
+
+}
+.text-content{
+    padding: 65px;
+}
+.slider{
+    //margin-top: 50px;
+    padding-top: 140px;
+}
+.latest-projects{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.latest-projects img{
+    width: 100%;
+}
+.latest-projects .lt-project{
+    text-align: center;
+    background-color: #eeeeee;
+    color: #000000;
+}
+.latest-projects .lt-project:hover{
+    background-color: #7e5c88;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+}
+
+.lt-project h5:first-child{
+    padding: 12px 0 4px 0px;
+    font-weight: bold;
+}
+.lt-project h5:last-child{
+    padding: 4px 0 12px 0px;
+}
+a.latest-project-link{text-decoration: none;}
+.lt-about{
+    display: flex;
+}
+.lt-about div:first-child{
+    float: left;
+}
+.lt-about img{
+    width: 70px;
+    height: auto;
+    border: 1px solid #d8d8d8;
+    padding: 5px;
+}
+.lt-about div:nth-child(2){
+    padding: 0px 10px;
+}
+.lt-about div:nth-child(2) p:first-child{
+    font-weight: bold;
+}
+.lt-about div:nth-child(2) a:last-child{
+    color: #7e5c88;
+    text-decoration: none;
+}
+.lt-about div:nth-child(2) a:last-child:hover{
+    color: #c3c3c3;;
+
+}
+
+
+.lt-blog{
+    font-size: 12px;
+    line-height: 12px;
+}
+.lt-blog a{
+    font-weight: bold;
+    color:#7e5c88;
+    text-decoration: none;
+}
+.lt-blog a:hover{
+    color: #c3c3c3;
+}
+.lt-blog p.description{
+    line-height: 18px;
+}
+
+div.lt-about-out .lt-about {
+    font-size: 12px;
+    line-height: 5px;
+    border-bottom: 1px solid #d8d8d8;
+    //border-top: 1px solid #d8d8d8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.lt-about-out .lt-about p.content {
+    line-height: 18px;
+}
+div.lt-about-out:last-child .lt-about{	
+    padding-top: 10px;
+    border: none;
+}
+
+.slidershadow.beforefooter,.slidershadow.beforecright{
+    margin-top: 60px;
+}
+
+.social-media li{
+    border-bottom: 1px solid #c3c3c3;
+    padding: 10px 0px;
+}
+.social-media li:last-child{
+    //border-bottom: none;
+}
+.social-media a{
+    text-decoration: none;
+    color: #7e5c88;
+}
+.social-media .fa {
+    padding: 7px;
+    font-size: 18px;
+    width: 32px;
+    text-align: center;	
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #c3c3c3;
+    color: #ffffff;
+}
+
+.social-media a:hover .fa {
+    background-color: #7e5c88;
+}
+.quick-link li{
+    border-bottom: 1px solid #c3c3c3;
+    padding: 10px 0px;
+}
+.quick-link li:last-child{
+    //border-bottom: none;
+}
+.quick-link a{
+    text-decoration: none;
+    color: #7e5c88;
+}
+.quick-link a:hover{    
+    color: #c3c3c3;
+}
+.ft-col h5 {
+    font-weight: bold;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.ft-col p.post-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+a.twitter-read-more{
+    color:#7e5c88;
+    text-decoration: none;
+}
+a.twitter-read-more:hover{
+    color:#c3c3c3;
+}
+.ft-col p.post-date{
+    font-size: 11px;
+}
+.cright{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.slidershadow{
+    border-radius: 50%;
+    width: 100%;
+    height: 3px;
+    background: black;
+    opacity: 0.3;
+    -webkit-filter: blur(6px);
+    -webkit-transform: scale(1, 0.2);
+}
+//.secondary{}//can use for sticky menu styles|| $(window).scrollTop() >= 60 add this class to header
+
+
+
